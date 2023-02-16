@@ -1,0 +1,7 @@
+---
+title: {{title}}
+---
+
+# Nombre
+
+Descripción

@@ -1,0 +1,3 @@
+Nessus es una herramienta para búsqueda de vulnerabilidades (*Vunerability asessment*), es decir, un escáner de vulnerabilidades.
+
+Nessus tiene dos componentes, un cliente y un servidor, el cliente te provee de una interfaz web con la que configurar tus escaneos. Y el servidor es el que realiza el escaneo, comparando los resultados con su base de datos. Ambos componentes pueden ejecutarse en una misma máquina.
