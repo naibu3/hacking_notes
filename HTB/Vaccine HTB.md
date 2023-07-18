@@ -2,6 +2,7 @@
 title: Archetype HTB
 date: 2023-02-04
 ---
+#linux
 
 ## Fase de reconocimiento
 

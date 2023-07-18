@@ -2,6 +2,7 @@
 title: Archetype HTB
 date: 2023-02-07
 ---
+#windows 
 
 ## Fase de reconocimiento
 

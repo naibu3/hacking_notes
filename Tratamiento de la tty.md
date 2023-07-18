@@ -17,15 +17,23 @@ stty raw -echo;fg
 Y se nos quedará la teminal detenida, simplemente introducimos:
 
 ```shell
-reset xterm
+reset
+```
+```bash
+xterm
 ```
 
 Y en este punto ya tendríamos una shell completamente interactiva (historial, navegación con las flechas, CTL+C, ...). Aunque en caso de error, sería recomendable ejecutar:
 
 ```shell
-export TERM=xterm
+export TERM=xterm; export SHELL=bash
 ```
 
+Para ajustar la resolución:
+
+```bash
+stty rows 54 columns 189
+```
 
 ## Método 2
 

@@ -1,0 +1,1 @@
+Magescan puede detectar vulnerabilidades comunes en [[Magento]], incluyendo problemas con permisos de archivos, errores de configuración y vulnerabilidades conocidas en extensiones populares de Magento.

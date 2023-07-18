@@ -1,0 +1,3 @@
+```sslscan
+sslscan <domain>
+```

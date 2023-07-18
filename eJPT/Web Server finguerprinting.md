@@ -75,5 +75,17 @@ httprint -P0 -h <hosts> -s <signature-file>
 ```
 
 - `-P0` evita hacer ping a la máquina (muchas no responden a las peticiones *ping echo*).
-- `-h` especifica el ó los hosts.
+- `-h` especifica el/los hosts.
 - `-s` especifica el archivo de firma.
+
+### Whatweb
+
+[[whatweb]] es una herramienta por consola que nos permite extraer rápidamente la información más relevante de un sitio web: gestor de contenido, tecnologías...
+
+### Whappalizer
+
+De igual forma que *whatweb*, [[wappalizer]] es un addon que nos ofrece la misma funcionalidad pero integrada en el navegador.
+
+### Builtwith.com
+
+Es una web con las mismas funcionalidades que las anteriores. Para entrar pincha en el [enlace](https://builtwith.com/).

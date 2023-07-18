@@ -14,6 +14,13 @@ curl <url>
 ```
 
 
+### Tramitar una petición
+
+```bash
+curl -s -X GET <url>
+```
+> `-s` no muestra el output de http.
+
 ### Imprimir código de respuesta de una página.
 
 En ocasiones queremos comprobar si una página existe o no, es decir el código de respuesta, para ello, utilizaremos:

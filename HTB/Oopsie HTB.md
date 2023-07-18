@@ -1,7 +1,10 @@
 ---
 title: Archetype HTB
 date: 2023-02-05
+author: naibu3
 ---
+
+#linux
 
 ## Fase de reconocimiento
 

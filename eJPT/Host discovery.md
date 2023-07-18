@@ -24,9 +24,13 @@ done; wait
 Una vez descubiertos todos los hosts, podemos aplicar [[OS finguerprinting]] para recopilar un poco más de información.
 
 
+## Arp-scan
+
+[[arp-scan]] es una buena herramienta para ver que equipos hay conectados a una red.
+
 ## Masscan
 
-Una buena herrramienta para escanear redes completas en busca de hosts es [[masscan]], que si bien es un poco más imprecisa que [[nmap]], es más potente. 
+Una buena herramienta para escanear redes completas en busca de hosts es [[masscan]], que si bien es un poco más imprecisa que [[nmap]], es más potente. 
 
 
 ## Busqueda de hosts por escaneo de puertos

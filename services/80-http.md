@@ -1,6 +1,6 @@
 *Hypertext Transfer Protocol* (HTTP) ó Protocolo de Transferencia de Hipertexto es un protocolo de la **capa de aplicación** para la transmisión de documentos hipermedia, como HTML. Fue diseñado para la comunicación entre los navegadores y servidores web, aunque se puede utilizar para otros propósitos también.
 
-## HTTP Verbs
+# HTTP Verbs
 
 - ### GET
 
@@ -77,3 +77,8 @@ Host: www.host.site
 Las *Representational State Transfer APIs* son un tipo específico de aplicaciones que se basa fuertemente en casi todos los HTTP Verbs. Se suelen llamar *web services* o simplemente *APIs*. Debido a que se apoyan en los *HTTP Verbs* no sería de extrañar que suelan contener funcionalidades potencialmente vulnerables.
 
 Es muy común en estas aplicaciones que se utilice PUT para guardar datos y no archivos. Por tanto, antes de reportar un método PUT ó DELETE debemos identificar si realmente sube un archivo ó simplemente crea contenido nuevo. Lo más fiable, una vez subido el supuesto archivo, sería tratar de buscarlo.
+
+
+# Reconocimiento
+
+A la hora de aplicar reconocimiento sobre una web, comenzamos con [[whatweb]] ó [[wappalizer]], para tratar de encontrar gestores de contenido ([[CMS]]) ó tecnologías que utilice la web.
