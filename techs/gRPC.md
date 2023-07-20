@@ -1,0 +1,1 @@
+**gRPC es una implementación de llamadas a procedimiento remoto** [(RPC)](https://datatracker.ietf.org/doc/html/rfc1831) diseñado originalmente por Google, de ahí su nombre: g (Google) + RPC. Es un marco RPC de código abierto que se utiliza para crear APIs escalables y rápidas.

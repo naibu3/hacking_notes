@@ -35,4 +35,8 @@ Mediante wrappers podemos llegar a ejecutar comandos, derivando un **LFI** en un
 - **php://input**, permite, enviando la petición por *POST*, enviar datos que se ejecuten, por ejemplo: `<?php system['<command>']; ?>`
 - **data://text/plain;base64,<comando en base64>**
 
-En caso de que se estén aplicando codificaciones, podemos tratar de introducir código al comienzo de una cadena en base64. De forma que al decodificarse se ejecute. Para saber la codificación de cadad carácter puedes consultar el siguiente [repo](https://github.com/synacktiv/php_filter_chain_generator).
+En caso de que se estén aplicando codificaciones, podemos tratar de introducir código al comienzo de una cadena en base64. De forma que al decodificarse se ejecute. Para saber la codificación de cada carácter puedes consultar el siguiente [repo](https://github.com/synacktiv/php_filter_chain_generator).
+
+# Log poisoning
+
+A partir de un **LFI** podemos lograr [[RCE]] mediante un [[log poisoning]].

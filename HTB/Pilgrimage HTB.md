@@ -43,7 +43,7 @@ http://pilgrimage.htb [200 OK] Bootstrap, Cookies[PHPSESSID], Country[RESERVED][
 
 Aunque no vemos nada.
 
-A continuación, podemos tratar de buscar recursos, comenzamos con [[dirb]]:
+A continuación, podemos tratar de buscar recursos, comenzamos con [[dirb 1]]:
 
 ```dirb
 ---- Scanning URL: http://pilgrimage.htb/.git/ ----

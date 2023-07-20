@@ -45,7 +45,7 @@ whatweb http://only4you.htb/
 http://only4you.htb/ [200 OK] Bootstrap, Country[RESERVED][ZZ], Email[info@only4you.htb], Frame, HTML5, HTTPServer[Ubuntu Linux][nginx/1.18.0 (Ubuntu)], IP[10.10.11.210], Lightbox, Script, Title[Only4you], nginx[1.18.0]
 ```
 
-Tenemos una sección de *contacto*, donde podemos enviar un mensaje y suscribirnos a una *newsletter*. Antes de comenzar a probar, dejaremos en segundo plano a [[dirb]] en busca de posibles rutas:
+Tenemos una sección de *contacto*, donde podemos enviar un mensaje y suscribirnos a una *newsletter*. Antes de comenzar a probar, dejaremos en segundo plano a [[dirb 1]] en busca de posibles rutas:
 
 ```bash
 dirb http://only4you.htb/ /usr/share/wordlists/dirb/common.txt

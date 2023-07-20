@@ -158,7 +158,7 @@ Y ya tenemos credenciales para acceder por [[22-ssh]] (`marcus:funkymonkey`). Ya
 
 ## Escalada de privilegios
 
-Una vez dentrode la máquina no encontramos nada sospechoso, salvo porque la versión de [[docker]] es antigua. Tras una búsqueda por internet, descubrimos que es vulnerable y nos permite escalar privilegios, además encontramos un exploit en el siguiente [repo](https://github.com/UncleJ4ck/CVE-2021-41091).
+Una vez dentrode la máquina no encontramos nada sospechoso, salvo porque la versión de [[Docker]] es antigua. Tras una búsqueda por internet, descubrimos que es vulnerable y nos permite escalar privilegios, además encontramos un exploit en el siguiente [repo](https://github.com/UncleJ4ck/CVE-2021-41091).
 
 Seguimos las instrucciones, asignando privilegios a la bash del contenedor del que escapamos antes, y ejecutamos el script, introducimos *yes*, y ya somos **root**. 
 

@@ -1,0 +1,3 @@
+Cypher Injection is a way for maliciously formatted input to jump out of its context, and by altering the query itself, hijack the query and perform unexpected operations on the database.
+
+This is a cousin to SQL injection, but affects our Cypher query language.Cypher Injection is a way for maliciously formatted input to jump out of its context, and by altering the query itself, hijack the query and perform unexpected operations on the database.
