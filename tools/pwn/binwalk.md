@@ -1,0 +1,1 @@
+Binwalk es una herramienta rápida y fácil de usar para: analizar en busca de codigo malicioso, realizar ingeniería inversa y extraer imágenes de firmware.

@@ -1,4 +1,4 @@
-Es otra herramienta de fuzzing ([[Directories and files enumeration]]) similar a [[dirb]] o [[dirbuster]]. Esta escrita en *go*, por lo que trabaja muy bien con *sockets* y conexiones.
+Es otra herramienta de fuzzing ([[Directories and files enumeration 1]]) similar a [[dirb 1]] o [[dirbuster]]. Esta escrita en *go*, por lo que trabaja muy bien con *sockets* y conexiones.
 
 ## Uso
 

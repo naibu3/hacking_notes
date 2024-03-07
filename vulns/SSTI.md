@@ -8,11 +8,11 @@ type: web
 
 # ssti
 
-*Server Side Template Injection* ó *ssti* es una vulnerabilidad de aplicaciones web que emplean plantillas para mostrar contenido dinámico, como podría ser *jinja2* de [[flask]].
+*Server Side Template Injection* ó *ssti* es una vulnerabilidad de aplicaciones web que emplean plantillas para mostrar contenido dinámico, como podría ser *jinja2* de [[flask 1]].
 
 ## flask-python3
 
-Las aplicaciones con *flask/jinja2*, pueden ser vulnerables a *ssti*, para comprobarlo podemos probar con un payload como `{{2*3}}`, si la página renderiza un `6`, sabremos que dicho *payload* se ejecuta como código [[python]], permitiéndonos *ejecución remota de comandos* ([[RCE]]).
+Las aplicaciones con *flask/jinja2*, pueden ser vulnerables a *ssti*, para comprobarlo podemos probar con un payload como `{{2*3}}`, si la página renderiza un `6`, sabremos que dicho *payload* se ejecuta como código [[python 1]], permitiéndonos *ejecución remota de comandos* ([[RCE]]).
 
 A continuación algunos payloads (mirate también [hacktricks](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection/jinja2-ssti)):
 

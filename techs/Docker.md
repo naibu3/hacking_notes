@@ -135,7 +135,7 @@ Docker Compose es una herramienta de orquestación de contenedores que permite d
 
 Esto es especialmente útil para aplicaciones complejas que requieren la interacción de varios servicios diferentes, ya que Docker Compose permite definir y configurar fácilmente la conexión y la comunicación entre estos servicios.
 
-En el [[GitHub]] de [vulhub](https://github.com/vulhub/vulhub), podremos encontrar gran cantidad de entornos vulnerables preconfigurados.
+En el [[GitHub 1]] de [vulhub](https://github.com/vulhub/vulhub), podremos encontrar gran cantidad de entornos vulnerables preconfigurados.
 
 # Volúmenes
 

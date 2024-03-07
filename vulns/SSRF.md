@@ -1,4 +1,4 @@
-El **Server-Side Request Forgery** (**SSRF**) es una vulnerabilidad de seguridad en la que un atacante puede forzar a un servidor web para que realice solicitudes HTTP en su nombre.El ataque [[XXE]] se puede utilizar para desencadenar un SSRF al inyectar una entidad [[XML]] maliciosa que contiene una referencia a una dirección IP o puerto interno en la red del servidor.
+El **Server-Side Request Forgery** (**SSRF**) es una vulnerabilidad de seguridad en la que un atacante puede forzar a un servidor web para que realice solicitudes HTTP en su nombre.El ataque [[XXE]] se puede utilizar para desencadenar un SSRF al inyectar una entidad [[XML 1]] maliciosa que contiene una referencia a una dirección IP o puerto interno en la red del servidor.
 
 Al explotar con éxito un SSRF, el atacante puede enviar solicitudes HTTP a servicios internos que de otra manera no estarían disponibles para la red externa. Esto puede permitir al atacante obtener **información sensible** o incluso **tomar el control** de los servicios internos.
 

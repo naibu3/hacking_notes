@@ -2,7 +2,7 @@ Mediante port forwarding, podemos hacer que un servicio que solo es accesible a 
 
 # Chisel
 
-Mediante la herramienta [[chisel]] podemos hacer port forwarding sin necesidad de privilegios.
+Mediante la herramienta [[chisel 1]] podemos hacer port forwarding sin necesidad de privilegios.
 
 # Ssh
 
