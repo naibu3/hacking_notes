@@ -218,7 +218,7 @@ tcp        0      0 localhost:46930         localhost:7687          TIME_WAIT
 [...]
 ```
 
-Vemos dos puertos abiertos que solo son accesibles desde la propia máquina, así que aplicamos [[eJPT-Glossary/port forwarding]]. Para ello utilizaremos [[chisel 1]]:
+Vemos dos puertos abiertos que solo son accesibles desde la propia máquina, así que aplicamos [[eJPT-Notes/port forwarding]]. Para ello utilizaremos [[chisel 1]]:
 
 ```bash
 ./chisel server -p 8000 --reverse

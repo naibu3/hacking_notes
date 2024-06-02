@@ -1,0 +1,1 @@
+Es una herramienta para ver metadatos de imágenes.

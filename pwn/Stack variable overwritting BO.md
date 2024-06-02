@@ -5,11 +5,11 @@ coautor: naibu3
 
 #bufferOverflow 
 
-# Stack variable overwritting BO
+# Stack variable overwriting BO
 
 ## ¿Qué es?
 
-Mediante un [[Buffer overflow]], podemos sobreescribir variables sensibles cercanas en memoria. Más concretamente en la zona del *stack* o *pila*, donde se guardan las variables *estáticas*.
+Mediante un [[Buffer overflow]], podemos sobrescribir variables sensibles cercanas en memoria. Más concretamente en la zona del *stack* o *pila*, donde se guardan las variables *estáticas*.
 
 Además podemos crear un script que automatice la interacción con el binario.
  

@@ -1,0 +1,1 @@
+Spose es una herramienta de escaneo de puertos diseñada específicamente para trabajar a través de servidores [[SQUID Proxy]]. Esta herramienta permite a los atacantes buscar posibles servicios y puertos abiertos en una red interna “protegida” por un servidor Squid Proxy.

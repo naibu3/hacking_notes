@@ -1,8 +1,8 @@
-Es una colección de clases de python para trabajar con protocolos de red. Está enfocado en dar un acceso de bajo nivel a los paquetes y, para algunosm protocolos, al protocolo en sí mismo. 
+Es una colección de clases de python para trabajar con protocolos de red. Está enfocado en dar un acceso de bajo nivel a los paquetes y, para algunos protocolos, al protocolo en sí mismo. 
 
 ## Instalación
 
-La herramienta se ecuentra en el siguiente repositorio de [github](https://github.com/fortra/impacket). Para instalarlo, lo clonamos y ejecutamos el siguiente comando:
+La herramienta se encuentra en el siguiente repositorio de [github](https://github.com/fortra/impacket). Para instalarlo, lo clonamos y ejecutamos el siguiente comando:
 
 ```shell
 git clone https://github.com/fortra/impacket

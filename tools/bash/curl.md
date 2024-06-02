@@ -17,9 +17,21 @@ curl <url>
 ### Tramitar una petición
 
 ```bash
-curl -s -X GET <url>
+curl -s -X METHOD <url>
 ```
 > `-s` no muestra el output de http.
+
+#### Utilizando un proxy
+
+```bash
+curl <url> --proxy <proxy>
+```
+
+#### Pasar cabeceras o data
+
+```bash
+curl <url> -H <headers> -d <data>
+```
 
 ### Imprimir código de respuesta de una página.
 

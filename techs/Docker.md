@@ -1,3 +1,4 @@
+#docker
 
 Docker nos permite crear *contenedores*, es decir sistemas que son similares a las *máquinas virtuales* pero que comparten el kernel del *SO* nativo. De esta forma podemos instalar aplicaciones sin preocuparnos por las dependencias.
 

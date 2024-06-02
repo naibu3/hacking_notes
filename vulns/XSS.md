@@ -1,7 +1,9 @@
-*XSS* ó *Cross Site Scripting*, es una vulnearabilidad que permite al atacante controlar parte del contenido de una aplicación web, ejecutando código malicioso en la página web de un usuario sin su conocimiento o consentimiento De forma que pueda:
+#web 
+
+*XSS* ó *Cross Site Scripting*, es una vulnerabilidad que permite al atacante controlar parte del contenido de una aplicación web, ejecutando código malicioso en la página web de un usuario sin su conocimiento o consentimiento De forma que pueda:
 
 - Modificar el contenido del sitio en tiempo real.
-- Inyectarcontenido malicioso.
+- Inyectar contenido malicioso.
 - Robar cookies de sesión.
 - Hacer acciones sobre la web como si fuera un usuario legítimo.
 - ...
@@ -18,7 +20,7 @@ Hay tres tipos *reflejadas* (*reflected*), *persistentes* (*persistent*) ó *DOM
 
 ### Reflected XSS
 
-Son aquellos en los que el payload viaja en la **petición** que manda **el navegador de la víctima** al servidor. De forma que se debe mandar un enlace (p.e. mediante *phishing*) a la víctima que en casao de ser abierto pondrá en marcha el ataque.
+Son aquellos en los que el payload viaja en la **petición** que manda **el navegador de la víctima** al servidor. De forma que se debe mandar un enlace (p.e. mediante *phishing*) a la víctima que en caso de ser abierto pondrá en marcha el ataque.
 
 Se llama *reflejado* porque la víctima ejecuta el payload, pero el output se ve reflejado en la máquina del atacante.
 

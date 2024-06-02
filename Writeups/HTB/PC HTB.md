@@ -89,7 +89,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 tcp6       0      0 :::50051                :::*                    LISTEN      -
 ```
 
-Así que hacemos [[eJPT-Glossary/port forwarding]]:
+Así que hacemos [[eJPT-Notes/port forwarding]]:
 
 ```bash
 ssh -L 8000:127.0.0.1:8000 sau@10.10.11.214
