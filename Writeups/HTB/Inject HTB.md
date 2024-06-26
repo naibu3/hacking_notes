@@ -36,7 +36,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Nos llama la atención el servicio del puerto `8080`, se trata de [[nagios]], un software de monitorización. Si tratamos de conectarnos por el navegador a `http://ip:8080`, nos encontramos una página web donde nos llama la atención una página de *uploads*, en la que sólo se admiten imágenes.
 
-Tras probar varias cosas, descubrimos que existe una vulnerabilidad a [[LFI]] y [[directory traversal]] en el parámetro `img` de `http://ip/show-image?img=`. Utilizando [[burpsuite]] para mandar las peticiones y *url-encodear* el valor de `img`, podemos listar por ejemplo el `/etc/passwd`:
+Tras probar varias cosas, descubrimos que existe una vulnerabilidad a [[Local File Inclusion (LFI)]] y [[directory traversal]] en el parámetro `img` de `http://ip/show-image?img=`. Utilizando [[burpsuite]] para mandar las peticiones y *url-encodear* el valor de `img`, podemos listar por ejemplo el `/etc/passwd`:
 
 ```txt
 root:x:0:0:root:/root:/bin/bash

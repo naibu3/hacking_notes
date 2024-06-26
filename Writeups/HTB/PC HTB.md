@@ -40,7 +40,7 @@ Si buscamos el error y *service*, encontraremos que puede tratarse de un servici
 grpcui -plaintext 10.10.11.214:50051
 ```
 
-Se nos abrirá en el navegador una pestaña mediante la cuál podremos tramitar peticiones a la API. Si tratamos de hacer *login* con las credenciales *admin:admin*, veremos que nos dan un *Jason Web Token* ([[JWT]]) y un *ID*. Ahora, si tratamos de hacer una petición a *getInfo*, pasando el ID y el JWT, veremos un mensaje de error `Unexpected <class 'TypeError'>: 'NoneType' object is not subscriptable`. Si tratamos de capturar la petición con [[burpsuite]] y probamos con una inyección SQL ([[SQLI]]) como `OR 1=1-- -`, veremos que nos reporta un error, dándonos la pista de que pueda ser vulnerable a [[SQLI]].
+Se nos abrirá en el navegador una pestaña mediante la cuál podremos tramitar peticiones a la API. Si tratamos de hacer *login* con las credenciales *admin:admin*, veremos que nos dan un *Jason Web Token* ([[JWT]]) y un *ID*. Ahora, si tratamos de hacer una petición a *getInfo*, pasando el ID y el JWT, veremos un mensaje de error `Unexpected <class 'TypeError'>: 'NoneType' object is not subscriptable`. Si tratamos de capturar la petición con [[burpsuite]] y probamos con una inyección SQL ([[SQL Injection]]) como `OR 1=1-- -`, veremos que nos reporta un error, dándonos la pista de que pueda ser vulnerable a [[SQL Injection]].
 
 # Explotación
 

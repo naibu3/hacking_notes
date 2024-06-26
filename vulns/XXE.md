@@ -1,8 +1,8 @@
-Cuando hablamos de **XML External Entity** (**XXE**) **Injection**, a lo que nos referimos es a una vulnerabilidad de seguridad en la que un atacante puede utilizar una entrada [[XML 1]] maliciosa para acceder a recursos del sistema que normalmente no estarían disponibles, como archivos locales o servicios de red.
+Cuando hablamos de **XML External Entity** (**XXE**) **Injection**, a lo que nos referimos es a una vulnerabilidad de seguridad en la que un atacante puede utilizar una entrada [[XML]] maliciosa para acceder a recursos del sistema que normalmente no estarían disponibles, como archivos locales o servicios de red.
 
-Un ataque XXE generalmente implica la inyección de una **entidad** [[XML 1]] maliciosa en una solicitud HTTP, que es procesada por el servidor y puede resultar en la exposición de información sensible.
+Un ataque XXE generalmente implica la inyección de una **entidad** [[XML]] maliciosa en una solicitud HTTP, que es procesada por el servidor y puede resultar en la exposición de información sensible.
 
-Un caso común en el que los atacantes pueden explotar XXE es cuando el servidor web no valida adecuadamente la entrada de datos [[XML 1]] que recibe. En este caso, un atacante puede inyectar una entidad XML maliciosa que contiene referencias a archivos del sistema que el servidor tiene acceso. Esto puede permitir que el atacante obtenga información sensible del sistema, como contraseñas, nombres de usuario, claves de API, entre otros.
+Un caso común en el que los atacantes pueden explotar XXE es cuando el servidor web no valida adecuadamente la entrada de datos [[XML]] que recibe. En este caso, un atacante puede inyectar una entidad XML maliciosa que contiene referencias a archivos del sistema que el servidor tiene acceso. Esto puede permitir que el atacante obtenga información sensible del sistema, como contraseñas, nombres de usuario, claves de API, entre otros.
 
 Cabe destacar que, en ocasiones, los ataques XML External Entity (XXE) Injection no siempre resultan en la exposición directa de información sensible en la respuesta del servidor. En algunos casos, el atacante debe “**ir a ciegas**” para obtener información confidencial a través de técnicas adicionales.
 
@@ -14,7 +14,7 @@ Adicionalmente, en algunos casos, un ataque XXE puede ser utilizado como un vect
 
 # PoC
 
-Haremos la **Prueba de Concepto** utilizando el contenedor del siguiente [repo](https://github.com/jbarone/xxelab). Al acceder, vemos que hay un panel para registrarse, si interceptamos la petición con [[burpsuite]], podremos ver la siguiente estructura [[XML 1]]:
+Haremos la **Prueba de Concepto** utilizando el contenedor del siguiente [repo](https://github.com/jbarone/xxelab). Al acceder, vemos que hay un panel para registrarse, si interceptamos la petición con [[burpsuite]], podremos ver la siguiente estructura [[XML]]:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,7 +61,7 @@ syslog:x:101:104::/home/syslog:/bin/false
  is already registered!
 ```
 
-Hay otras formas de listarlo, pero eso es ya [[LFI]].
+Hay otras formas de listarlo, pero eso es ya [[Local File Inclusion (LFI)]].
 
 ## XXE OOB
 

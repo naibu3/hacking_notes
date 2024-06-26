@@ -12,7 +12,7 @@ flag.original: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statica
 ```
 
 Vemos que no nos dice *not stripped*, por lo que si probamos a debuguear con gdb no podremos, ya que se han eliminado
-la información necesaria paara ello. Sin embargo, mediante *strings* podemos sacar algo más de información:
+la información necesaria para ello. Sin embargo, mediante *strings* podemos sacar algo más de información:
 
 ```bash
 strings flag
@@ -24,7 +24,7 @@ UPX!
 UPX!
 ```
 
-Vemos UPX, un programa para empaquetar programas, si filtramos por *packed*:
+Vemos [[UPX]], un programa para empaquetar programas, si filtramos por *packed*:
 
 ```bash
 strings flag.original | grep packed

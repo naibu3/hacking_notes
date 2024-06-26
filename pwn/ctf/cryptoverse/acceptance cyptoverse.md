@@ -19,7 +19,7 @@ Además nos dan un binario llamado `acceptance`.
 
 ----
 
-## Reconocimiento
+# Reconocimiento
 
 Comenzamos lanzando [[checksec]] y `file`:
 
@@ -178,7 +178,7 @@ Si repetimos el procedimiento anterior pasando dicho payload, `accept` contiene:
 Que si lo decodificamos es `BBBB`.
 
 
-## Explotación (en local)
+# Explotación (en local)
 
 Como vimos al descompilar el código, para que se imprima la flag, `accept` debe valer `-1`. En 4 digitos hexadecimales sería `0xffffffff`, como no podemos copiar y pegar carácteres hexadecimales (por problemas de conversión), vamos a generar el payload con python2:
 
@@ -200,7 +200,7 @@ Help him: Error num 2
 Esto se debe a que está tratando de listar el fichero `/home/me/flag.txt` pero no existe en nuestro equipo. Ya hemos conseguido resolver el reto en local!
 
 
-## Explotación (server)
+# Explotación (server)
 
 Como el binario corre en un servidor debemos explotarlo ahí para recuperar la flag. Todo el proceso lo haremos mediante un script en python3 con [[pwntools]]:
 

@@ -39,4 +39,4 @@ En caso de que se estén aplicando codificaciones, podemos tratar de introducir 
 
 # Log poisoning
 
-A partir de un **LFI** podemos lograr [[RCE]] mediante un [[log poisoning]].
+A partir de un **LFI** podemos lograr [[RCE]] mediante un [[Log poisoning]].
