@@ -4,21 +4,21 @@ date: {{date}}
 tier: 
 author: naibu3
 ---
-
-## Reconocimiento
+#writeup 
+# Reconocimiento
 
 Como siempre comenzamos lanzando [[nmap]], para tratar de buscar puertos abiertos:
 
-```bash
+```nmap
 
 ```
 ```nmap
 
 ```
 
-## Explotación
+# Explotación
 
 
 
-## Escalada de privilegios
+# Escalada de privilegios
 

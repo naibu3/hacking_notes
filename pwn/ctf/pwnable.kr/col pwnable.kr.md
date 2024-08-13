@@ -41,7 +41,7 @@ int main(int argc, char* argv[]){
 Vemos que el programa pide un parámetro, al que aplica la función **check_password** para compararlo con un hash.
 En caso de colisión (ambos valores son iguales), se nos muestra la flag.
 
-La función **check password** lo que hace es generar un valor en base a sumar los códigos en hexdecimal de los primeros cinco carácteres
+La función **check password** lo que hace es generar un valor en base a sumar los códigos en hexadecimal de los primeros cinco carácteres
 del parámetro introducido.
 
 De esta forma, basta con encontrar un valor cuyas primeras cinco cifras sumen dicho valor. Si dividimos entre 5, obtendremos 4 valores y un

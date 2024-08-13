@@ -1,4 +1,4 @@
-Es una herramienta desarrollada en java por OWASP que aunque ya no tiene soporte sigue siendo muy utilizada. Existe una alternativa para linux llamada [[dirb 1]].
+Es una herramienta desarrollada en java por OWASP que aunque ya no tiene soporte sigue siendo muy utilizada. Existe una alternativa para linux llamada [[dirb]].
 
 ## Instalación
 

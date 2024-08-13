@@ -112,7 +112,7 @@ PORT     STATE SERVICE VERSION
 
 Vemos que está corriendo un servicio [[80-http]] con lo que parece un **pyLoad**. Si accedemos via navegador, confirmamos que se trata de dicho servicio. Veremos un panel de login en el que no parecen funcionar las credenciales por defecto.
 
-Con una búsqueda por internet encontramos el siguiente [artículo](https://github.com/bAuh0lz/CVE-2023-0297_Pre-auth_RCE_in_pyLoad). Vemos que tenemos un [[RCE]]. Podemos comprobarlo montándonos un servidor http con [[python 1]] y tratando de mandarnos una petición desde el servidor:
+Con una búsqueda por internet encontramos el siguiente [artículo](https://github.com/bAuh0lz/CVE-2023-0297_Pre-auth_RCE_in_pyLoad). Vemos que tenemos un [[RCE]]. Podemos comprobarlo montándonos un servidor http con [[python]] y tratando de mandarnos una petición desde el servidor:
 
 ```bash
 curl -i -s -k -X $'POST' \                                                               

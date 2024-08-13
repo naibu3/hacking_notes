@@ -152,7 +152,7 @@ En el código fuente de la página que nos sale una vez dentro (*CTL+U*), podemo
 
 Además tenemos asignado un *número de ticket* y hay un buscador que aparentemente sólo dice si el ticket existe. En este punto podríamos buscar una posible vuln de [[Sql injection]]. Si probamos con nuestro número nos dice que *Ticket Exists*, en cambio con cualquier otro nos dice que *Ticket Doesn't Exist*. Pero si probamos con `<numero que no exista> OR 1`, entonces si existe, por tanto de ducimos que **existe una vulnarebilidad de sql injection**.
 
-Como no podemos lanzar [[sqlmap]] directamente ya que la petición va a través de sockets, hacemos una búsqueda por internet sobre cómo realizar un SQLi a través de websockets. Lo que nos lleva al siguiente [artículo](https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html) con un script muy interesante en *python3*. 
+Como no podemos lanzar [[SQLMap]] directamente ya que la petición va a través de sockets, hacemos una búsqueda por internet sobre cómo realizar un SQLi a través de websockets. Lo que nos lleva al siguiente [artículo](https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html) con un script muy interesante en *python3*. 
 
 El script hará las veces de transcriptor, poniéndose entre el servidor y sqlmap. Primero debemos cambiar `ws_server` y `data`:
 

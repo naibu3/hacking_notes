@@ -22,15 +22,19 @@ Además hay otras herramientas para la terminal, como [[sublist3r]], (viene prei
 
 Utilizan fuerza bruta para buscar subdominios, los mejores diccionarios son los de [seclists](https://github.com/danielmiessler/SecLists). Algunas son:
 
-- ### Gobuster
+- ## Gobuster
 
 La herramienta [[gobuster]] con el modo *vhost*.
 
 ```bash
-gobuster vhost -u <dominio> -w <wordlist> -t <no de hilos>
+gobuster vhost -u <dominio> -w <wordlist> -t <no de hilos> --append-domain
 ```
 
-- #### Wfuzz
+```bash
+gobuster vhost -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u board.htb -t 200 --append-domain
+```
+
+- ## Wfuzz
 
 Es una herramienta específica de *fuzzing*, por lo que es más cómoda:
 
@@ -39,10 +43,16 @@ wfuzz -c -t <no de hilos> -w <wordilist> -H "Host: FUZZ.dominio" <url> --hc=403
 ```
 > Con `-c` se muestra la salida con colores. Con `--hc` podemos ocultar un cierto código http ó con `--sc` mostrarlo.
 
-- #### Sublist3r
+- ## Sublist3r
 
 La herramienta [[sublist3r]] es una herramienta que utiliza *OSINT*.
 
 ```bash
 python3 sublist3r.py -d <dominio>
+```
+
+## Diccionarios
+
+```bash
+/usr/share/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
 ```

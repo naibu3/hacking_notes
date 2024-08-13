@@ -1,6 +1,6 @@
-**Log Poisoning** es una técnica de ataque en la que un atacante **manipula** los **archivos de registro** (**logs**) de una aplicación web para lograr un resultado malintencionado. Esta técnica puede ser utilizada en conjunto con una vulnerabilidad **[[Local File Inclusion (LFI)]]** para lograr una **ejecución remota de comandos** en el servidor.
+**Log Poisoning** es una técnica de ataque en la que un atacante **manipula** los **archivos de registro** (**logs**) de una aplicación web para lograr un resultado malintencionado. Esta técnica puede ser utilizada en conjunto con una vulnerabilidad **[[LFI]]** para lograr una **ejecución remota de comandos** en el servidor.
 
-Como ejemplos para esta clase, trataremos de envenenar los recursos ‘**auth.log**‘ de **SSH** y ‘**access.log**‘ de **Apache**, comenzando mediante la explotación de una vulnerabilidad [[Local File Inclusion (LFI)]] primeramente para acceder a estos archivos de registro.
+Como ejemplos para esta clase, trataremos de envenenar los recursos ‘**auth.log**‘ de **SSH** y ‘**access.log**‘ de **Apache**, comenzando mediante la explotación de una vulnerabilidad [[LFI]] primeramente para acceder a estos archivos de registro.
 
 # Explotación
 

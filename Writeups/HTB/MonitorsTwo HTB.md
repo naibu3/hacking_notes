@@ -48,7 +48,7 @@ Si accedemos a la web, veremos una pestaña de login de un servicio llamado **Ca
 
 > Cacti es una completa solución de gráficos, monitoreo de redes y recopilación de datos que aprovecha el poder de RRDtool. Con la herramienta Cacti puedes sondear servicios a intervalos predeterminados y hacer gráficas con los datos resultantes.
 
-Si buscamos junto a la versión, encontraremos que resulta ser vulnerable, además de un [repositorio](https://github.com/FredBrave/CVE-2022-46169-CACTI-1.2.22) con un exploit en [[python 1]].
+Si buscamos junto a la versión, encontraremos que resulta ser vulnerable, además de un [repositorio](https://github.com/FredBrave/CVE-2022-46169-CACTI-1.2.22) con un exploit en [[python]].
 
 ## Explotación
 

@@ -33,31 +33,12 @@ curl http://10.10.59.41 -v
 
 ## OSINT
 
-Significa *Open Source Intelligence*, y se refiere a las técnicas para recopilar información que se encuentra disponible por toda la red.
+Podemos aplicar [[OSINT]] para encontrar contenidos.
 
-### [[Google Dorks]]
-
-Son comandos avanzados del buscador de google que nos permiten afinar las búsquedas.
-
-### [[wappalizer]]
-
-Es una extensión para navegadores que da información sobre las tecnologías detrás de un sitio web.
-
-### Wayback machine
-
-Es un sitio web que permite ver versiones antiguas de los sitios web. [Link](https://archive.org/web/).
-
-### [[GitHub]]
-
-En ocasiones las páginas corren sobre aplicaciones cuyo código se encuentra en esta plataforma.
-
-### S3 buckets
-
-*S3 Buckets* es un servicio de almacenamiento de *AWS*. En ocasiones, los permisos están mal configurados por lo que algunos recursos son accesibles.
-
+Una técnica común cuando trabajamos con **código abierto**, es buscar en los propios repositorios de [[GitHub]] del proyecto *Changelogs* que nos den pistas sobre posibles versiones de la aplicación.
 ## Automatizada
 
-Podemos automatizar esta búsqueda con herramientas como:
+Podemos automatizar esta búsqueda con herramientas de **[[fuzzing]]** como:
 
 - [[ffuf]]
 - [[wfuzz]]

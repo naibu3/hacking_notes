@@ -2,11 +2,17 @@ En ocasiones, los usuarios o motores de búsqueda no pueden encontrar recursos q
 
 Hay dos opciones a la hora de enumerar recursos, la primera es utilizar fuerza bruta, lo que es normalmente muy ineficiente. La segunda consiste en utilizar diccionarios con nombres comunes. Para ello existen varias herramientas que automatizan el proceso, tales como [[dirbuster]], ...
 
-## Dirbuster
+# Metodología
+
+1. En primer lugar, buscar *directorios*.
+2. Además buscar archivos mediante extensiones (`.php`, ...)
+3. Enumerar subdominios ([[Subdomain enumeration]])
+# Herramientas
+## [[dirbuster]]
 
 Es una herramienta desarrollada en java por OWASP que aunque ya no tiene soporte sigue siendo muy utilizada.
 
-## Gobuster
+## [[gobuster]]
 
 [[gobuster]] es una herramienta de *fuzzing* escrita en *go*. Para enumeración de recursos utilizaremos el modo `dir`:
 
@@ -16,10 +22,10 @@ gobuster dir -u <url> -w <wordlist> -t 200
 > `-t` es para especificar el número de hilos.
 > En ocasiones es necesario el `--add-slash`, para que añada una `/` a las direcciones.
 > Con `-b` podemos ocultar ciertos códigos de estado.
-> Si quisieramos buscar archivos, con `-x` podemos *fuzzear* añadiendo una cierta extensión.
+> Si quisiéramos buscar archivos, con `-x` podemos *fuzzear* añadiendo una cierta extensión.
 
 
-## Wfuzz
+## [[wfuzz]]
 
 [[wfuzz]] es otra muy buena herramienta de *fuzzing*.
 
@@ -33,7 +39,7 @@ wfuzz -c --hc=404,403 -t 200 -w <wordlist> http://dominio/FUZZ/
 > `--sl` permite mostrar respuestas con un número específico de líneas.
 
 
-## Ffuf
+## [[ffuf]]
 
 [[ffuf]] es otra herramienta de *fuzzing* escrita en *go* por lo que trabaja bien con conexiones.
 
@@ -45,3 +51,6 @@ Se puede hacer *fuzzing* con [[burpsuite]], mediante la sección de *sitemap*.
 
 Podemos hacer enumeración pasiva con webs como [Phonebook](https://phonebook.cz/).
 
+# Wordlists
+
+Normalmente se suele emplear el `/usr/share/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt`.

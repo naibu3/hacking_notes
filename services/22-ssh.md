@@ -1,4 +1,4 @@
-kSSH (Secure Shell) es un protocolo de administración remota que permite a los usuarios **controlar** y **modificar** sus servidores remotos a través de Internet mediante un mecanismo de **autenticación seguro**. Como una alternativa más segura al protocolo **Telnet**, que transmite información sin cifrar, SSH utiliza **técnicas criptográficas** para garantizar que todas las comunicaciones hacia y desde el servidor remoto estén cifradas.
+SSH (Secure Shell) es un protocolo de administración remota que permite a los usuarios **controlar** y **modificar** sus servidores remotos a través de Internet mediante un mecanismo de **autenticación seguro**. Como una alternativa más segura al protocolo **Telnet**, que transmite información sin cifrar, SSH utiliza **técnicas criptográficas** para garantizar que todas las comunicaciones hacia y desde el servidor remoto estén cifradas.
 
 SSH proporciona un mecanismo para autenticar un usuario remoto, transferir entradas desde el cliente al host y retransmitir la salida de vuelta al cliente. Esto es especialmente útil para administrar sistemas remotos de manera segura y eficiente, sin tener que estar físicamente presentes en el sitio.
 
@@ -6,6 +6,20 @@ SSH proporciona un mecanismo para autenticar un usuario remoto, transferir entra
 
 ```bash
 ssh user@ip -p <port>
+```
+
+Podemos también conectarnos proporcionando la clave *rsa* del usuario en cuestión:
+
+```bash
+ssh -i <archivo_clave> user@ip -p <port>
+```
+
+# Versiones
+
+Si la versión es menor a la 7.7, podríamos tener una via potencial de comprobar usuarios válidos:
+
+```bash
+searchsploit ssh user enumeration
 ```
 
 # POC

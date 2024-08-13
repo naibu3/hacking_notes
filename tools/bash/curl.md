@@ -3,37 +3,44 @@ title: curl
 shell: bash
 ---
 
-## Descripción
+# Descripción
 
 *Curl* nos permite hacer una petición a una página web. Mostrándonos la respuesta por pantalla.
 
-## Uso
+# Uso
 
 ```bash
 curl <url>
 ```
 
 
-### Tramitar una petición
+## Tramitar una petición
 
 ```bash
 curl -s -X METHOD <url>
 ```
 > `-s` no muestra el output de http.
 
-#### Utilizando un proxy
+### Utilizando un proxy
 
 ```bash
 curl <url> --proxy <proxy>
 ```
 
-#### Pasar cabeceras o data
+### Pasar cabeceras o data
 
 ```bash
 curl <url> -H <headers> -d <data>
 ```
 
-### Imprimir código de respuesta de una página.
+### Pasar cookies
+
+```bash
+curl -b 'token=<JWT>' <url>
+```
+> En este caso un [[JWT]].
+
+## Imprimir código de respuesta de una página.
 
 En ocasiones queremos comprobar si una página existe o no, es decir el código de respuesta, para ello, utilizaremos:
 

