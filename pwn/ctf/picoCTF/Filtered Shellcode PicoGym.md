@@ -1,8 +1,8 @@
-# Filtered Shellcode - PicoGym
+#pwn #writeup 
 
 Este ejercicio era más complejo y la resolución es bastante interesante por lo que he decidido dedicarle este writeup. Esta es una versión traducida al español y a mis palabras :) de [este articulo](https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Pwn/filtered-shellcode.md).
 
-## Reconocimiento
+# Reconocimiento
 
 Nos dan únicamente un ejecutable *fun*, que si comprobamos con [[checksec]], tiene todas las protecciones desactivadas. Si lo descompilamos con [[ghidra]], veremos que se nos pide un código a ejecutar de un máximo de 1000 caracteres que se pasa a la función *`execute`*:
 
