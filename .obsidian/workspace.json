@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "826112f796ea24e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b34998eaa7202e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f021725fb5880bbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pwn/ctf/DefCamp24/aptssh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc4cf8314679b888",
+    "type": "split",
+    "children": [
+      {
+        "id": "07a5c60e8025a81d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c907e2d40b0a59c1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2258df1d11bff2e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "PHP",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4a15da78ab37d4e7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "6195834a33d4a87f",
+    "type": "split",
+    "children": [
+      {
+        "id": "669638212adf795b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53978de7afe68077",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "pwn/ctf/DefCamp24/aptssh.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2216cb1491653b19",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "pwn/ctf/DefCamp24/aptssh.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ca07771e35db4d02",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ad3f6c4353305f10",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "pwn/ctf/DefCamp24/aptssh.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:Crear nuevo lienzo": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "c907e2d40b0a59c1",
+  "lastOpenFiles": [
+    "pwn/ctf/DefCamp24/aptssh.md",
+    "pwn/ctf/DefCamp24/ftp_console.md",
+    "services/143-IMAP-POP3.md",
+    "services/1433-mssql.md",
+    "services/3306-mysql.md",
+    "pwn/ctf/DefCamp24/buy-cooffee.md",
+    "pwn/ctf/DefCamp24",
+    "templates/tpl.ctf.md",
+    "services/161-SNMP.md",
+    "tools/SNMP/Braa.md",
+    "tools/SNMP/OneSixtyOne.md",
+    "tools/SNMP/SNMPwalk.md",
+    "tools/SNMP",
+    "templates/tpl.service.md",
+    "services/25-smtp.md",
+    "tools/smtp-user-enum.md",
+    "vulns/Heartbleed.md",
+    "vulns/Ataques de transferencia de zona.md",
+    "vulns/Open Redirect.md",
+    "templates/tpl.machine.md",
+    "tools/telnet.md",
+    "templates/tpl.tool.md",
+    "services/DNS.md",
+    "pwn/SROP.md",
+    "pwn/Ret2csu.md",
+    "pwn/ctf/csaw24/Mini Golfing.md",
+    "pwn/Format string.md",
+    "pwn/protecciones/PIE.md",
+    "pwn/ctf/csaw24",
+    "pwn/ctf/protostar",
+    "img/DNS.png",
+    "pwn/ctf/CyberSpace24",
+    "tools/pwn/debuggers",
+    "img/gotplt2.png",
+    "img/gotplt1.png",
+    "pwn/ctf/ROPEmporium",
+    "img/string_stack_ROP.png",
+    "Writeups/HTB/img/usage4.png",
+    "Writeups/HTB/img/usage3.png",
+    "Writeups/HTB/img/usage2.png",
+    "Writeups/HTB/img/usage.png",
+    "Writeups/HTB/img/create_page.png",
+    "Writeups/HTB/img/rev_shell.png",
+    "informes"
+  ]
+}
