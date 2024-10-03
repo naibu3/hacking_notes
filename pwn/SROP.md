@@ -2,4 +2,4 @@
 
 # ¿Qué es?
 
-**Sigreturn Oriented Programming** es una técnica de [[Return Oriented Programming|ROP]], 
+**Sigreturn Oriented Programming** es una técnica de [[ROP - Return Oriented Programming|ROP]], 

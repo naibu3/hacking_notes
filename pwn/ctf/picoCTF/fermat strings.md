@@ -60,7 +60,7 @@ int main(void)
 
 Vemos que el programa es una implementación del *último teorema de Fermat*. Éste dice que no existen tres números que cumplan `x^n + y^n = z^n` para *n* mayor que 2. Por tanto, es imposible que se cumpla la última condición.
 
-El título nos da una pista de que quizás somos capaces de ejecutar un [[format string]]. Si probamos con `%x` no veremos nada porque se ejecuta un *atoi* a nuestro input. Sin embargo, por como funciona dicha función, podemos saltarnos esta restricción colocando un número seguido de nuestro payload: `1 %x`.
+El título nos da una pista de que quizás somos capaces de ejecutar un [[Format string]]. Si probamos con `%x` no veremos nada porque se ejecuta un *atoi* a nuestro input. Sin embargo, por como funciona dicha función, podemos saltarnos esta restricción colocando un número seguido de nuestro payload: `1 %x`.
 
 # Explotación
 

@@ -72,3 +72,13 @@ Con el *asterisco* **`*`**, especificamos un tamaño dinámico de relleno, de fo
 4. Almacena el dato en la posición de memoria indicada por la undécima posición de memoria
 
 Osea, somos capaces de copiar el valor de una posición del stack en la dirección almacenada en otra posición 
+
+# Objetivos interesantes
+
+Lo normal no será atacar un format string y tener una variable preparada para ser sobrescrita. Para ello, podemos tratar de apuntar a  distintos objetivos muy jugosos.
+
+## DTORS (Destructores)
+
+Aunque son más comunes en lenguajes orientados a objetos como C++, en C también es posible encontrarlos. Estas funciones se encargan de liberar la memoria asociada a un objeto cuando éste es destruido.
+
+Si logramos sobrescribir la última posición de la zona `.dtors`, llamada `__DTOR_END__`, lograremos que al ser llamado, el destructor acabe ejecutando nuestro código.

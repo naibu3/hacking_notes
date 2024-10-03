@@ -44,7 +44,7 @@ RELRO           STACK CANARY      NX            PIE             RPATH      RUNPA
 Partial RELRO   Canary found      NX disabled   No PIE          No RPATH   No RUNPATH   2229 Symbols	  No
 ```
 
-Tenemos una entrada por *gets* en la función *vuln*, de la que podríamos aprovecharnos. Podemos ejecutar código del stack (*NX disabled*), sin embargo tenemos una protección [[canary]] (que saltaría con cualquier función, aunque, probablemente *vuln* no la tenga). Además, el binario es *statically linked*, por lo que trae todas las dependencias incluidas.
+Tenemos una entrada por *gets* en la función *vuln*, de la que podríamos aprovecharnos. Podemos ejecutar código del stack (*NX disabled*), sin embargo tenemos una protección [[Canary]] (que saltaría con cualquier función, aunque, probablemente *vuln* no la tenga). Además, el binario es *statically linked*, por lo que trae todas las dependencias incluidas.
 
 # Explotación
 

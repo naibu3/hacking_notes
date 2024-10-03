@@ -5,7 +5,7 @@ date: 2023-02-15
 
 ## Reconocimiento
 
-Antes de comenzar comprobamos mediante [[ping]] que la máquina se encuentra activa, además en base al ttl ([[OS finguerprinting]]), podemos presuponer que se trata de una máquina **windows**.
+Antes de comenzar comprobamos mediante [[ping]] que la máquina se encuentra activa, además en base al ttl ([[OS fingerprinting]]), podemos presuponer que se trata de una máquina **windows**.
 
 Procedemos ahora a buscar puertos abiertos con [[nmap]]:
 

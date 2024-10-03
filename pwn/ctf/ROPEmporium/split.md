@@ -19,7 +19,7 @@ NX:       NX enabled
 PIE:      No PIE (0x400000)
 ```
 
-Vemos que tan solo tiene el [[NX bit]], por lo que el ataque será probablemente mediante [[Return Oriented Programming|ROP]].
+Vemos que tan solo tiene el [[NX bit]], por lo que el ataque será probablemente mediante [[ROP - Return Oriented Programming|ROP]].
 
 Analizando con [[gdb]]-[[pwndbg]]:
 

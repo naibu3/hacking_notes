@@ -41,7 +41,7 @@ else {
 }
 ```
 
-Nos damos cuenta que es vulnerable a un [[format string]]. Lo que debemos hacer es que la variable *sus* valga *`0x67616c66`*. Para ello debemos aprovecharnos de la vulnerabilidad.
+Nos damos cuenta que es vulnerable a un [[Format string]]. Lo que debemos hacer es que la variable *sus* valga *`0x67616c66`*. Para ello debemos aprovecharnos de la vulnerabilidad.
 
 # Explotación
 

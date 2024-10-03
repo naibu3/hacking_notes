@@ -2,12 +2,9 @@
 original autor: CrazyCat
 coautor: naibu3
 ---
+#bufferOverflow #pwn
 
-#bufferOverflow 
-
-# Buffer Overflow
-
-## ¿Qué es?
+# ¿Qué es?
 
 Un ataque de tipo **Buffer Overflow** (*desbordamiento de buffer*), es un ataque en el que se explota una vulnerabilidad que nos permite introducir información, más allá del espacio asignado a un recurso. Por ejemplo, podríamos meter 100 carácteres en una variable de 64 carácteres, sobreescribiendo los registros siguientes.
 

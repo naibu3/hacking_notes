@@ -12,5 +12,14 @@ Podemos generar plantillas para nuestros scripts con:
 pwn template --host <host> --port <port> <binary>
 ```
 
+## Attach gdb
+
+```
+gdb.attach(<proc_name>, '''
+...
+continue
+''')
+```
+
 # Herramientas
 

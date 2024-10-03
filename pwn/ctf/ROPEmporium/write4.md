@@ -25,7 +25,7 @@ The important thing to realize in this challenge is that ROP is just a form of a
 `mov [reg], reg`.
 ```
 
-Por lo que parece, será un ataque de tipo [[Return Oriented Programming|ROP]].
+Por lo que parece, será un ataque de tipo [[ROP - Return Oriented Programming|ROP]].
 
 Analizando con [[gdb]]-[[pwndbg]], vemos las siguientes funciones:
 

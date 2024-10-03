@@ -53,7 +53,7 @@ add rax, rsp; ret    # (No es perfecto, pero hace lo mismo)
 xchg rax, rsp; ret    # (Intercambia rax y rsp, PELIGROSO)
 ```
 
-Una vez tenemos la dirección del stack en un registro, podemos usarla para dinámicamente computar otras direcciones, de forma que podemos saltarnos protecciones de tipo [[ASLR]] (aunque no [[canary|canaries]]).
+Una vez tenemos la dirección del stack en un registro, podemos usarla para dinámicamente computar otras direcciones, de forma que podemos saltarnos protecciones de tipo [[ASLR]] (aunque no [[Canary|canaries]]).
 
 Un ejemplo bueno es [[write4]].
 
@@ -101,6 +101,6 @@ Esta limitación en ocasiones podemos superarla con lo que se conoce como *magic
 
 Hay formas de bypasear esta protección, como una sobreescritura parcial de la dirección de retorno.
 
-## [[canary|Canaries]]
+## [[Canary|Canaries]]
 
 No hay una forma exacta de saltar esta protección.

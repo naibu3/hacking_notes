@@ -1,5 +1,3 @@
-# Filtered Shellcode - PicoGym
-
 Este ejercicio era más complejo y la resolución es bastante interesante por lo que he decidido dedicarle este writeup. Esta es una versión traducida al español y a mis palabras :) de [este articulo](https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Pwn/filtered-shellcode.md).
 
 ## Reconocimiento

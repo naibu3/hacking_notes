@@ -8,13 +8,13 @@ Comenzamos ejecutando:
 script /dev/null -c bash
 ```
 
-Una vez ejecutado pulsamos CTL+Z para mandar el proceso a segundo plano, y ejecutamos:
+Una vez ejecutado pulsamos `CTL+Z` para mandar el proceso a segundo plano, y ejecutamos:
 
 ```shell
 stty raw -echo;fg
 ```
 
-Y se nos quedará la teminal detenida, simplemente introducimos:
+Y se nos quedará la terminal detenida, simplemente introducimos:
 
 ```shell
 reset

@@ -17,7 +17,7 @@ Arch:     amd64-64-little
     PIE:      No PIE (0x400000)
 ```
 
-Vemos que tiene el [[NX bit]], además, por el nombre podemos intuir que aplicaremos [[Return Oriented Programming]].
+Vemos que tiene el [[NX bit]], además, por el nombre podemos intuir que aplicaremos [[ROP - Return Oriented Programming]].
 
 Si descompilamos, veremos que existe una función *vuln* que lee y escribe constantemente:
 
@@ -105,7 +105,7 @@ En este punto podemos mirar con [[ropper]] los gadgets que tenemos disponibles:
 
 No son muchos ya que el binario es pequeño. Por suerte, tenemos *`syscall`*, por lo que podemos probar una técnica llamada [[SROP]].
 
-Por desgracia, para esta técnica necesitaríamos el gadget `mov eax, 0xf`, sin embargo, hay una forma de hacerlo mediante la llamada a *read*. Con el siguiente script, lograremos cambiar de localización el stack, a una zona con permisos de ejecución, donde podremos introducir un [[Injecting shellcode|shellcode]]:
+Por desgracia, para esta técnica necesitaríamos el gadget `mov eax, 0xf`, sin embargo, hay una forma de hacerlo mediante la llamada a *read*. Con el siguiente script, lograremos cambiar de localización el stack, a una zona con permisos de ejecución, donde podremos introducir un [[Shellcodes|shellcode]]:
 
 ```python
 #!/usr/bin/python3

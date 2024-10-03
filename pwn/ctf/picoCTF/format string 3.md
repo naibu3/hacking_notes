@@ -47,7 +47,7 @@ f13e1963
 /bin/sh
 ```
 
-Vemos que tenemos una vulnerabilidad de [[format string]]. Además, si de alguna forma pudiéramos convertir el último *puts* a una llamada a *system* obtendríamos una shell. Por suerte, podemos hacerlo modificando la [[GOT]] (*Global Offset Table*).
+Vemos que tenemos una vulnerabilidad de [[Format string]]. Además, si de alguna forma pudiéramos convertir el último *puts* a una llamada a *system* obtendríamos una shell. Por suerte, podemos hacerlo modificando la [[GOT]] (*Global Offset Table*).
 
 Para ver dicha tabla podemos usar [[objdump]]:
 

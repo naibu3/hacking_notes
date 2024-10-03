@@ -188,7 +188,7 @@ SQL>
 
 ## Consiguiendo RCE (ejecución remota de comandos)
 
-Una vez dentro podemos tratar de mostrar el menú de ayuda con `help`, sin embargo, no obtenemos información muy relevante. Así que nos toca buscar por nuestra cuenta, en [[1433-ms-sql-s]] estará toda la info.
+Una vez dentro podemos tratar de mostrar el menú de ayuda con `help`, sin embargo, no obtenemos información muy relevante. Así que nos toca buscar por nuestra cuenta, en [[1433-mssql]] estará toda la info.
 
 El primer paso será comprobar si nuestro usuario tiene privilegios de administrador:
 

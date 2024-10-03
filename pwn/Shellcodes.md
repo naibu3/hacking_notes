@@ -2,13 +2,36 @@
 original autor: CrazyCat
 coautor: naibu3
 ---
-
-#bufferOverflow 
-
-## ¿Qué es?
+#bufferOverflow #pwn 
+# ¿Qué es?
 
 Ya hemos visto cómo funciona un [[Buffer overflow]] de tipo [[Ret2Win]], y como poder pasar parámetros. Sin embargo, en multitud de ocasiones no existirá una función concreta a la que llamar. En estos casos, podremos tratar de inyectar en el *stack* un *shellcode* que nos otorgará una *shell*.
 
+# Compilación
+
+Podemos compilar un shellcode con [[nasm]]:
+
+```bash
+nasm -f elf salida.asm
+```
+
+Y enlazarlo con [[ld]]:
+
+```bash
+ld salida.o -o salida
+```
+
+# Badchars
+
+Son bytes que los programas no interpretan bien como el *nullbyte* (`\x00`).
+
+Para bypasear esto, podemos aplicar un *XOR* a los bytes y luego revertirlo.
+
+# Egg hunters
+
+Son un tipo de programa capaz de buscar una shellcode a lo largo de un programa y en caso de encontrarla, saltar a ella
+
+# Ejercicios
 ## Ejercicio1
 
 ### Compilar el binario

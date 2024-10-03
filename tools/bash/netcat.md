@@ -1,5 +1,7 @@
-Es conocido por muchos como la navaja suiza para TCP/IP, ya que provee de una gran cantidad de funcionalidad para manejar conexiones.
+# ¿Qué es?
 
+Es conocido por muchos como la navaja suiza para TCP/IP, ya que provee de una gran cantidad de funcionalidad para manejar conexiones.
+# Uso
 ## Ponerse en escucha
 
 Podemos ponernos en escucha de la siguiente forma:
@@ -33,7 +35,6 @@ Y desde nuestra máquina nos conectaríamos:
 ```bash
 nc -v <ip> <port>
 ```
-
 
 ## Parámetros interesantes
 
