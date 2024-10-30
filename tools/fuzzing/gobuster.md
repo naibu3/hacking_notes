@@ -2,7 +2,7 @@ Es otra herramienta de fuzzing ([[Directories and files enumeration 1]]) similar
 
 ## Uso
 
-- Para listar directorios/archivos:
+# Para listar directorios/archivos:
 
 ```bash
 gobuster dir -u <url> -w <wordlist> -t 100
@@ -11,9 +11,13 @@ gobuster dir -u <url> -w <wordlist> -t 100
 
 En ocasiones es necesario el `--add-slash`, para que añada una `/` a las direcciones. Con `-b` podemos ocultar ciertos códigos de estado y de igual forma, con `-s` mostrarlos.
 
-Si quisieramos buscar archivos, con `-x` podemos *fuzzear* añadiendo una cierta extensión.
+Si quisiéramos buscar archivos, con `-x` podemos *fuzzear* añadiendo una cierta extensión.
 
-- Buscar subdominios:
+# Buscar subdominios:
+
+```
+gobuster dns --domain inlanefreight.com -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -t 200
+```
 
 ```bash
 gobuster vhost -u http://only4you.htb/ -w /usr/share/wordlists/dirb/common.txt -t 10 --append-domain

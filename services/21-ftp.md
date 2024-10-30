@@ -186,6 +186,9 @@ telnet 10.129.14.136 21
 openssl s_client -connect 10.129.14.136:21 -starttls ftp
 ```
 
+```bash
+ls -shila
+```
 # POC
 
 ## No existe el usuario anónimo

@@ -2,7 +2,59 @@ SSH (Secure Shell) es un protocolo de administración remota que permite a los u
 
 SSH proporciona un mecanismo para autenticar un usuario remoto, transferir entradas desde el cliente al host y retransmitir la salida de vuelta al cliente. Esto es especialmente útil para administrar sistemas remotos de manera segura y eficiente, sin tener que estar físicamente presentes en el sitio.
 
-# Uso
+[OpenBSD SSH](https://www.openssh.com/) (`OpenSSH`) es un fork de código abierto de SSH.
+
+Actualmente hay dos versiones de SSH: `SSH-1` y `SSH-2`. La segunda es la versión más reciente, mejor en términos de encriptación, velocidad, estabilidad y seguridad.
+
+# Configuración
+
+```bash
+cat /etc/ssh/sshd_config  | grep -v "#" | sed -r '/^\s*$/d'
+```
+
+## Configuraciones peligrosas
+
+| **Setting**                  | **Description**                             |
+| ---------------------------- | ------------------------------------------- |
+| `PasswordAuthentication yes` | Allows password-based authentication.       |
+| `PermitEmptyPasswords yes`   | Allows the use of empty passwords.          |
+| `PermitRootLogin yes`        | Allows to log in as the root user.          |
+| `Protocol 1`                 | Uses an outdated version of encryption.     |
+| `X11Forwarding yes`          | Allows X11 forwarding for GUI applications. |
+| `AllowTcpForwarding yes`     | Allows forwarding of TCP ports.             |
+| `PermitTunnel`               | Allows tunneling.                           |
+| `DebianBanner yes`           | Displays a specific banner when logging in. |
+# Auditando el servicio
+
+## SSH-Audit
+
+[ssh-audit](https://github.com/jtesta/ssh-audit):
+
+```bash
+git clone https://github.com/jtesta/ssh-audit.git && cd ssh-audit
+./ssh-audit.py 10.129.14.132
+
+```
+
+## Cambiar el método de autenticación
+
+Podemos utilizar `PreferredAuthentications`:
+
+```bash
+ssh -v cry0l1t3@10.129.14.132 -o PreferredAuthentications=password
+```
+
+## Versiones
+
+Dependiendo de la versión, podríamos probar ambas versiones del protocolo SSH-1/SSH-2.
+
+Si la versión es menor a la 7.7, podríamos tener una via potencial de comprobar usuarios válidos:
+
+```bash
+searchsploit ssh user enumeration
+```
+
+## Conexión
 
 ```bash
 ssh user@ip -p <port>
@@ -14,12 +66,8 @@ Podemos también conectarnos proporcionando la clave *rsa* del usuario en cuesti
 ssh -i <archivo_clave> user@ip -p <port>
 ```
 
-# Versiones
-
-Si la versión es menor a la 7.7, podríamos tener una via potencial de comprobar usuarios válidos:
-
-```bash
-searchsploit ssh user enumeration
+```
+ssh -o PreferredAuthentications=password user@host
 ```
 
 # POC

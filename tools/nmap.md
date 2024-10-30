@@ -214,7 +214,7 @@ Podemos exportar los resultados en 3 formatos diferentes:
 
 # Detección de SO
 
-Para que el escaneo trate de reportarnos el SO de la máquina objetivo mediante [[OS fingerprinting]], utilizaremos el parámetro `-O`:
+Para que el escaneo trate de reportarnos el SO de la máquina objetivo mediante [[Fingerprinting]], utilizaremos el parámetro `-O`:
 
 ```bash
 nmap -O <ip>

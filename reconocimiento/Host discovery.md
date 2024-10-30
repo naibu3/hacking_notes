@@ -21,7 +21,7 @@ done; wait
 
 >Con este script lanzamos un bucle que lanzará un hilo para comprobar cada host en el rango de la red.
 
-Una vez descubiertos todos los hosts, podemos aplicar [[OS fingerprinting]] para recopilar un poco más de información.
+Una vez descubiertos todos los hosts, podemos aplicar [[Fingerprinting]] para recopilar un poco más de información.
 
 
 ## Arp-scan
