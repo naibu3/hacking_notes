@@ -15,3 +15,8 @@ ps -eo user,command
 ```
 
 O podemos utilizar herramientas como [[pspy]]. Es una herramienta de línea de comandos que monitorea las tareas que se ejecutan en segundo plano en un sistema Unix/Linux y muestra las nuevas tareas que se inician.
+
+```bash
+grep -nri "/tmp/message" /usr
+```
+

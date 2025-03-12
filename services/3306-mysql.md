@@ -37,6 +37,28 @@ cat /etc/mysql/mysql.conf.d/mysqld.cnf | grep -v "#" | sed -r '/^\s*$/d'
 
 Podemos hacer un primer reconocimiento con [[nmap]] utilizando los scripts de MySQL: `--script mysql*`.
 
+## [[metasploit]]
+
+```bash
+search type:auxiliary name:mysql
+```
+
+Fuerza bruta
+```bash
+scanner/mysql/mysql_login
+```
+
+Enumerar:
+```bash
+admin/mysql/mysql_enum
+```
+
+Ejecutar consultas:
+```bash
+auxiliary/admin/mysql/mysql_sql
+```
+
+
 ## Conexión
 
 ```bash

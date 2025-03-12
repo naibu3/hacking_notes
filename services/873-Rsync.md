@@ -16,6 +16,11 @@ sudo nmap -sV -p 873 127.0.0.1
 nc -nv 127.0.0.1 873
 ```
 
+```bash
+rsync -av --list-only rsync://<IP>/<resurso>
+rsync -avz rsync://192.61.73.3/backupwscohen ./file     # Traer archivos a local
+```
+
 ___
 # R-Services
 

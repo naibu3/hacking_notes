@@ -70,6 +70,23 @@ ssh -i <archivo_clave> user@ip -p <port>
 ssh -o PreferredAuthentications=password user@host
 ```
 
+## [[metasploit]]
+
+Fuerza bruta:
+```bash
+scanner/ssh/ssh_login
+```
+
+Enumerar usuarios:
+```bash
+scanner/ssh/ssh_enumusers
+```
+
+Si la versión es `libssh`:
+```bash
+use auxiliary/scanner/ssh/libssh_auth_bypass
+```
+
 # POC
 
 Utilizaremos el siguiente contenedor:

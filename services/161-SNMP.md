@@ -58,6 +58,15 @@ rouser authPrivUser authpriv -V systemonly
 
 # Auditando el servicio
 
+## [[nmap]]
+
+```bash
+nmap -sU --script snmp-brute -p161 <ip>
+```
+```bash
+nmap -sU -p 161 --script snmp-* demo.ine.local > snmp_output
+```
+
 ## SNMPwalk
 
 [[SNMPwalk]] es una herramienta que permite obtener los OIDs con su información:

@@ -5,3 +5,9 @@ Para buscar:
 ```bash
 searchsploit <terminos>
 ```
+
+Para buscar solo módulos de [[metasploit]]:
+
+```bash
+searchsploit <terminos> | grep metasploit
+```

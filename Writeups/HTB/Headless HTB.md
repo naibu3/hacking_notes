@@ -138,7 +138,7 @@ is_admin=ImFkbWluIg.dmzDkZNEm6CK0oyL1fbM-SnXpH0
 
 Guardando la cookie en el navegador, somos capaces de ver el *dashboard*:
 
-![[dashboard.png]]
+![[Writeups/THM/AdventOfCyber/SQ1/dashboard.png]]
 
 En este dashboard se nos permite ejecutar una especie de examen de diagnóstico. Podemos volver a interceptar la solicitud con [[burpsuite]] y tratar de inyectar código:
 

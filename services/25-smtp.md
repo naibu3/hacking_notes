@@ -174,3 +174,10 @@ En las cabeceras de un email viaja mucha información que podría ser de utilida
 ## smtp-user-enum
 
 [[smtp-user-enum]] es una herramienta que como su nombre indica, permite buscar usuarios válidos en SMTP.
+
+## [[metasploit]]
+
+```bash
+scanner/smtp/smtp_enum
+```
+

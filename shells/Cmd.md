@@ -1,4 +1,4 @@
-*Cmd* es la terminal de windows. Se suele encontrar en `C:\Windows\system32\cmd.exe`. Al contrario que [[Bash]], posee varias funcionalidades integradas (bash llama a biarios externos). Actualmente windows está desarrollando más la otra opción de terminal, [[Powershell]].
+*Cmd* es la terminal de windows. Se suele encontrar en `C:\Windows\system32\cmd.exe`. Al contrario que [[Bash]], posee varias funcionalidades integradas (bash llama a biarios externos). Actualmente windows está desarrollando más la otra opción de terminal, [[techs/Powershell]].
 
 # 1. Windows environment
 

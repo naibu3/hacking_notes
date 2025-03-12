@@ -1,4 +1,4 @@
-Es una herramienta que nos permite conectarnos a Samba ([[445-smb]]) desde la terminal de Linux.
+Es una herramienta que nos permite conectarnos a Samba ([[445-SMB]]) desde la terminal de Linux.
 
 # Uso
 

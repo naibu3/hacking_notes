@@ -165,16 +165,21 @@ nmap -Pn <ip>
 
 Como hemos explicado antes, el servidor puede bloquear la búsqueda de versiones, por lo que podemos ver qué lo ha bloqueado con `--reason`.
 
+### Fragmentación de paquetes
+
 La primera forma de evadir un *firewall* es mediante la **fragmentación de los paquetes**. Muchos firewalls esperan un tipo de paquete concreto, al fragmentarlos rompes ese esquema, evadiendo la seguridad. Esto puede realizarse con el parámetro `-f`.
 
 Otra forma es mediante el *mtu*, especificando el parámetro `--mtu <valor>`, donde dicho valor debe ser múltiplo de 8.
+
+### Parámetros de los paquetes
 
 De igual forma, en el caso de los puertos de origen, con el parámetro `--source-port`, podemos especificar un puerto a través del cuál realizaremos el escaneo.
 
 Por otro lado, con `--data-length`, podemos añadir un extra de longitud a los paquetes.
 
-Además podemos falsificar la dirección MAC de origen con el parámetro `--spoof-mac <OUI>`
-permitiendo especificar una OUI.
+Además podemos falsificar la dirección MAC de origen con el parámetro `--spoof-mac <OUI>` permitiendo especificar una OUI.
+
+### Stealth scan
 
 Finalmente, el uso de `-sS` (tcp SYN scan), en determinadas ocasiones puede ser mejor ya que no deja logs.
 

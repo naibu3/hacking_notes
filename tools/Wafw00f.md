@@ -4,7 +4,7 @@ title: Wafw00f
 #discovery #firewall #reconocimiento
 # ¿Qué es?
 
-Es una herramienta que permite la extracción de información de un *Web Application Firewall*.
+Es una herramienta que permite la extracción de información de un *[[WAF|Web Application Firewall]]*.
 
 # Instalación
 

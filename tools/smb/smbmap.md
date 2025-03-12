@@ -1,4 +1,4 @@
-*Smbmap* es una herramienta que nos permite enumerar un servicio Samba ([[445-smb]]).
+*Smbmap* es una herramienta que nos permite enumerar un servicio Samba ([[445-SMB]]).
 
 # Uso
 

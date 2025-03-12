@@ -174,7 +174,18 @@ find / -type f -name ftp* 2>/dev/null | grep scripts
 
 Normalmente, los más útiles se lanzan por defecto con el `-sC`.
 
+## [[metasploit]]
+
+```bash
+use scanner/ftp/ftp_login
+use scanner/ftp/anonymous
+```
+
 ## Interactuar con el servicio.
+
+```bash
+ftp <ip>
+```
 
 ```bash
 nc -nv 10.129.14.136 21
@@ -189,6 +200,7 @@ openssl s_client -connect 10.129.14.136:21 -starttls ftp
 ```bash
 ls -shila
 ```
+
 # POC
 
 ## No existe el usuario anónimo
